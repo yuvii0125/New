@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Calendar Section */
+.calendar-section {
+    width: 30%;
+}
+
+.wrapper {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.current-date {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.icons span {
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.icons span:hover {
+    background: #eaeaea;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.calendar li {
+    width: calc(100% / 7);
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: background 0.3s;
+}
+
+.calendar li:hover {
+    background: #f2f2f2;
+}
+
+.calendar li.active {
+    color: #fff;
+    background: #9b59b6;
+    border-radius: 50%;
+}
+
+/* Sticky Notes Section */
+.sticky-notes-section {
+    width: 70%;
+    position: relative;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sticky-note {
+    background: #fffbcc;
+    width: 250px;
+    min-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sticky-note h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 5px;
+    background: #f8e5a0;
+    border-radius: 3px;
+}
+
+.sticky-note .tasks {
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.sticky-note .tasks ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sticky-note .tasks li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sticky-note .tasks input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.sticky-note .note-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sticky-note .note-footer button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #d63031;
+}
+
+.sticky-note .note-footer button:hover {
+    color: #e74c3c;
+}
